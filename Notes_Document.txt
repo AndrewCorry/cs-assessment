@@ -1,0 +1,9 @@
+For the tiny and small arrays, the insert function was actually faster than the append function.
+The functions were about the same speed for the medium array.
+For large and extra large, the insert function was drastically slower than append.
+The append functions scales much better than the insert function the longer the array is, as unshift must go through the entire array each time to add a value.
+
+
+	        Tiny	    Small	    Medium	        Large	    X-Large
+Insert	    27.7 μs	    34.7 μs	    127.1 μs	    6.3 ms	    734.6 ms
+Append	    64.4 μs	    68.2 μs	    94.2 μs	        356.6 μs	2.2 MS
